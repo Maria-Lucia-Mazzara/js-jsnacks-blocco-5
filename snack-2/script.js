@@ -6,3 +6,11 @@ const people = [
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+
+//  ciclo for classico 
+
+for (let i = 0; i < people.length; i++) {
+  const name = people[i];
+  console.log(name, i, people);
+}
+
