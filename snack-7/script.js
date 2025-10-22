@@ -37,17 +37,25 @@ const students = [
 // console.log(studente_trovato);
 
 
-// metodo forEach
-let studente_trovato = '';
+// // metodo forEach
+// let studente_trovato = '';
 
-students.forEach((studente) => {
-  if (studente.id === 2) {
-    studente_trovato = studente;
-  }
+// students.forEach((studente) => {
+//   if (studente.id === 2) {
+//     studente_trovato = studente;
+//   }
+// });
+
+// console.log(studente_trovato);
+
+
+// metodo con find 
+
+const studente_trovato = students.find((studente) => {
+  return studente.id === 2; 
 });
 
-console.log(studente_trovato);
-
+console.log('Studente con id 2:', studente_trovato);
 
 
 
