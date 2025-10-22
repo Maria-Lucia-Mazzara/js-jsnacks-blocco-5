@@ -7,3 +7,13 @@ const posts = [
 
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
+
+//  ciclo for classico 
+
+for (let i = 0; i < posts.length; i++) {
+  const user = posts[i];
+  const author = user.author; // prendo solo il nome della persona
+  console.log(author);
+}
+
+
