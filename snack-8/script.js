@@ -21,3 +21,21 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+// metodo ciclo for 
+
+let classe_trovata = ''; 
+
+
+for (let i = 0; i < students.length; i++) {
+  const studente = students[i]; 
+
+  if (studente.name === 'Marco Lanci') { 
+    classe_trovata = studente.class; 
+  }
+}
+
+console.log(classe_trovata);
+
+// metodo forEach
+
