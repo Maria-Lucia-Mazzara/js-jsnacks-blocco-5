@@ -39,14 +39,21 @@ const students = [
 
 // metodo forEach
 
-let classe_trovata = ''; 
+// let classe_trovata = ''; 
 
 
-students.forEach((studente) => {
-  if (studente.name === 'Marco Lanci') {
-    classe_trovata = studente.class;
-  }
+// students.forEach((studente) => {
+//   if (studente.name === 'Marco Lanci') {
+//     classe_trovata = studente.class;
+//   }
+// });
+
+// console.log(classe_trovata);
+
+// metodo find
+const studente_trovato = students.find((studente) => {
+  return studente.name === 'Marco Lanci';
 });
 
-console.log(classe_trovata);
+console.log(studente_trovato.class);
 
