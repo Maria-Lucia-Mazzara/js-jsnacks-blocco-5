@@ -25,16 +25,29 @@ const students = [
 
 
 
-// metodo ciclo for
+// // metodo ciclo for
+// let studente_trovato = '';
+
+// for (let i = 0; i < students.length; i++) {
+//   const studente = students[i]; 
+//   if (studente.id === 2) { 
+//     studente_trovato = studente; 
+//   }
+// }
+// console.log(studente_trovato);
+
+
+// metodo forEach
 let studente_trovato = '';
 
-for (let i = 0; i < students.length; i++) {
-  const studente = students[i]; 
-  if (studente.id === 2) { 
-    studente_trovato = studente; 
+students.forEach((studente) => {
+  if (studente.id === 2) {
+    studente_trovato = studente;
   }
-}
+});
+
 console.log(studente_trovato);
+
 
 
 
