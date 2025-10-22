@@ -24,18 +24,29 @@ const students = [
 
 // metodo ciclo for 
 
+// let classe_trovata = ''; 
+
+
+// for (let i = 0; i < students.length; i++) {
+//   const studente = students[i]; 
+
+//   if (studente.name === 'Marco Lanci') { 
+//     classe_trovata = studente.class; 
+//   }
+// }
+
+// console.log(classe_trovata);
+
+// metodo forEach
+
 let classe_trovata = ''; 
 
 
-for (let i = 0; i < students.length; i++) {
-  const studente = students[i]; 
-
-  if (studente.name === 'Marco Lanci') { 
-    classe_trovata = studente.class; 
+students.forEach((studente) => {
+  if (studente.name === 'Marco Lanci') {
+    classe_trovata = studente.class;
   }
-}
+});
 
 console.log(classe_trovata);
-
-// metodo forEach
 
