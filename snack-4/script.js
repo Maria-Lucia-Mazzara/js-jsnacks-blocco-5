@@ -8,12 +8,28 @@ const posts = [
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
 
-//  ciclo for classico 
+// //  ciclo for classico 
 
-for (let i = 0; i < posts.length; i++) {
-  const user = posts[i];
-  const author = user.author; // prendo solo il nome della persona
-  console.log(author);
-}
+// for (let i = 0; i < posts.length; i++) {
+//   const user = posts[i];
+//   const author = user.author; // prendo solo il nome della persona
+//   console.log(author);
+// }
 
+// // versione forEach
+// const authors = [];
+
+// posts.forEach((user) => {
+//   console.log(user.author);
+  
+// });
+// console.log(authors);
+
+// versione con map 
+
+const autori = posts.map((user) => {
+const nome_atori = user.author;
+return nome_atori
+});
+console.log(autori);
 
