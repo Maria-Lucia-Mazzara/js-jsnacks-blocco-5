@@ -44,3 +44,14 @@ const zucchine = [
 // console.log(zucchine_lunghe);
 // console.log(zucchine_corte);
 
+// metodo filter 
+const zucchine_lunghe = zucchine.filter((zucchina) => {
+  return zucchina.length >= 15; // tengo solo quelle lunghe almeno 15 cm
+});
+
+const zucchine_corte = zucchine.filter((zucchina) => {
+  return zucchina.length < 15; // tengo solo le altre
+});
+
+console.log(zucchine_lunghe);
+console.log(zucchine_corte);
