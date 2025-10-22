@@ -21,3 +21,20 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+
+
+
+// metodo ciclo for
+let studente_trovato = '';
+
+for (let i = 0; i < students.length; i++) {
+  const studente = students[i]; 
+  if (studente.id === 2) { 
+    studente_trovato = studente; 
+  }
+}
+console.log(studente_trovato);
+
+
+
